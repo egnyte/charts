@@ -56,6 +56,9 @@ config:
   hosts: []
   #  - host:
   #    name:
+  #    auth:
+  #      username: 'username'
+  #      password: 'password'
 
   # Secret used to sign session cookies. If empty it will be replaced with a
   # random 64 length string

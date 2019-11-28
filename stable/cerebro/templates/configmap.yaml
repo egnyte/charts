@@ -57,6 +57,12 @@ data:
       {
         host = {{ $element.host | quote }}
         name = {{ $element.name | quote }}
+        {{- if $element.auth }}
+        auth = {
+          username = {{ $element.auth.username | quote }}
+          password = {{ $element.auth.password | quote }}
+        }
+        {{- end }}
       }
       {{- end }}
     ]
